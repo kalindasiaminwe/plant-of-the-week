@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {  merriweather } from "@/components/ui/fonts";
+import Navbar from "@/components/navbar";
 
 
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body
         className={`${merriweather.className} antialiased bg-white`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
