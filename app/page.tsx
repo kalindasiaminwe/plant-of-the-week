@@ -1,21 +1,26 @@
 import Header from "@/components/navbar";
-import Hero from "@/components/hero";
-import PlantInfo from "@/components/plant-info";
+
 import Image from "next/image";
 import { Divide } from "lucide-react";
+import Mission from "@/components/mission";
+import Influence from "@/components/influence";
+import BestProduct from "@/components/best-product";
+import HowToOrder from "@/components/how-to-order";
+import Footer from "@/components/footer";
+import Hero from "@/components/header";
 
 export default function Home() {
   return (
     <main className="bg-white">
-      <div className="bg-white">
-        <Hero />
-      </div>  
-      <div className="bg-[#fcdeda] w-[982px] mx-auto px-2 pt-20" > 
-        <PlantInfo />
-        </div>      
-      {/* <div className="px-20 pb-0 pt-20  bg-white">
-        <PlantInfo />
-      </div> */}
+      <div className="pb-10" > 
+        <Hero />      
+      </div>
+      <Mission />
+      <BestProduct />
+      <Influence />      
+      <HowToOrder />
+      <Footer />
+      
     </main>
   );
 }

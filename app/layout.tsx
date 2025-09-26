@@ -17,11 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
         className={`${merriweather.className} antialiased bg-white`}
       >
-        <Navbar />
+        <Navbar  />
         {children}
       </body>
     </html>
